@@ -1,0 +1,14 @@
+name: My main test action
+run-name: My main test action
+
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject enhanced GitHub environment variables
+        uses: rlespinasse/github-slug-action@v4.2.5
