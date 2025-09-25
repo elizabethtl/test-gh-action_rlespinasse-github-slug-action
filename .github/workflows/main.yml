@@ -12,3 +12,5 @@ jobs:
 
       - name: Inject enhanced GitHub environment variables
         uses: rlespinasse/github-slug-action@v4.2.5
+      - run: |
+          env
